@@ -1,0 +1,9 @@
+C:\webpro\MVC4\MvcAppFindResource\bindResouceDB\bin\Debug\bindResouceDB.dacpac
+C:\webpro\MVC4\MvcAppFindResource\bindResouceDB\bin\Debug\bindResouceDB.dll
+C:\webpro\MVC4\MvcAppFindResource\bindResouceDB\bin\Debug\bindResouceDB.pdb
+C:\webpro\MVC4\MvcAppFindResource\bindResouceDB\obj\Debug\Model.xml
+C:\webpro\MVC4\MvcAppFindResource\bindResouceDB\obj\Debug\refactor.xml
+C:\webpro\MVC4\MvcAppFindResource\bindResouceDB\obj\Debug\postdeploy.sql
+C:\webpro\MVC4\MvcAppFindResource\bindResouceDB\obj\Debug\predeploy.sql
+C:\webpro\MVC4\MvcAppFindResource\bindResouceDB\obj\Debug\bindResouceDB.dll
+C:\webpro\MVC4\MvcAppFindResource\bindResouceDB\obj\Debug\bindResouceDB.pdb

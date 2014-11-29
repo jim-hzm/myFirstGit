@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="positions" EntityType="Model.Store.positions" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="positions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="keyName" Type="varchar" MaxLength="15" />
+    <Property Name="Lat" Type="numeric" Scale="6" />
+    <Property Name="Lng" Type="numeric" Scale="6" />
+    <Property Name="dateStamp" Type="datetime" />
+  </EntityType>
+  <Function Name="positions_selectct_by_id" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="keyName" Type="varchar" Mode="In" />
+  </Function>
+</Schema>

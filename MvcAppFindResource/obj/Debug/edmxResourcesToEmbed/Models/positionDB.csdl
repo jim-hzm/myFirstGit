@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="positionDBEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="positions" EntityType="Model.position" />
+    <FunctionImport Name="positions_selectct_by_id" ReturnType="Collection(Model.positions_selectct_by_id_Result)">
+      <Parameter Name="keyName" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="position">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="keyName" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Lat" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="Lng" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="dateStamp" Type="DateTime" Precision="3" />
+  </EntityType>
+  <ComplexType Name="positions_selectct_by_id_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="keyName" Nullable="true" MaxLength="15" />
+    <Property Type="Decimal" Name="Lat" Nullable="true" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="Lng" Nullable="true" Precision="18" Scale="6" />
+    <Property Type="DateTime" Name="dateStamp" Nullable="true" Precision="23" />
+  </ComplexType>
+</Schema>

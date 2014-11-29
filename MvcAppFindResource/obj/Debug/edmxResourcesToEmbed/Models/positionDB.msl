@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="positionDBEntities">
+    <EntitySetMapping Name="positions">
+      <EntityTypeMapping TypeName="Model.position">
+        <MappingFragment StoreEntitySet="positions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="keyName" ColumnName="keyName" />
+          <ScalarProperty Name="Lat" ColumnName="Lat" />
+          <ScalarProperty Name="Lng" ColumnName="Lng" />
+          <ScalarProperty Name="dateStamp" ColumnName="dateStamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="positions_selectct_by_id" FunctionName="Model.Store.positions_selectct_by_id">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Model.positions_selectct_by_id_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="keyName" ColumnName="keyName" />
+          <ScalarProperty Name="Lat" ColumnName="Lat" />
+          <ScalarProperty Name="Lng" ColumnName="Lng" />
+          <ScalarProperty Name="dateStamp" ColumnName="dateStamp" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

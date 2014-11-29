@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <script src="../Scripts/jquery-2.1.1.min.js"></script>
+    <script src="../Scripts/positionTracking.js"></script>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEGuVdOjobWVHhtKGjnpBTjbKQO8Dlilc"></script>
+    <script>
+	//https://maps.googleapis.com/maps/api/js?key=AIzaSyDEGuVdOjobWVHhtKGjnpBTjbKQO8Dlilc&signed_in=false&libraries=places
+ function initialize() {
+  var pt = position_tracking();
+  var pos = pt.getPositionByKey("123456788"); //123456788, 123456789
+  var myLatlng = new google.maps.LatLng(pos.Lat, pos.Lng);    //new google.maps.LatLng(43.66,-79.59);
+  var mapOptions = {
+    zoom: 10,
+    center: myLatlng
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Hello World!'
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>

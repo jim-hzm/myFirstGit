@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAppFindResource", "MvcAppFindResource\MvcAppFindResource.csproj", "{CE904A9B-DF1E-4DF4-86C5-0873625D4B5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAppFindResource.Tests", "MvcAppFindResource.Tests\MvcAppFindResource.Tests.csproj", "{29C95179-3FA7-47DF-AB0F-E19973B3A0E4}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "bindResouceDB", "bindResouceDB\bindResouceDB.sqlproj", "{709EC0BE-7A23-436E-B041-4DDD6A0C9207}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE904A9B-DF1E-4DF4-86C5-0873625D4B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE904A9B-DF1E-4DF4-86C5-0873625D4B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE904A9B-DF1E-4DF4-86C5-0873625D4B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE904A9B-DF1E-4DF4-86C5-0873625D4B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29C95179-3FA7-47DF-AB0F-E19973B3A0E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29C95179-3FA7-47DF-AB0F-E19973B3A0E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29C95179-3FA7-47DF-AB0F-E19973B3A0E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29C95179-3FA7-47DF-AB0F-E19973B3A0E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{709EC0BE-7A23-436E-B041-4DDD6A0C9207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{709EC0BE-7A23-436E-B041-4DDD6A0C9207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{709EC0BE-7A23-436E-B041-4DDD6A0C9207}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{709EC0BE-7A23-436E-B041-4DDD6A0C9207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{709EC0BE-7A23-436E-B041-4DDD6A0C9207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{709EC0BE-7A23-436E-B041-4DDD6A0C9207}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

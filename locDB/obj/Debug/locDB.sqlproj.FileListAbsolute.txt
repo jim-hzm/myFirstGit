@@ -1,0 +1,14 @@
+C:\webpro\MVC4\findResourceWebAPI\locDB\bin\Debug\locDB.dacpac
+C:\webpro\MVC4\findResourceWebAPI\locDB\obj\Debug\Model.xml
+C:\webpro\MVC4\findResourceWebAPI\locDB\obj\Debug\refactor.xml
+C:\webpro\MVC4\findResourceWebAPI\locDB\obj\Debug\postdeploy.sql
+C:\webpro\MVC4\findResourceWebAPI\locDB\obj\Debug\predeploy.sql
+C:\webpro\MVC4\findResourceWebAPI\locDB\obj\Debug\locDB.dll
+C:\webpro\MVC4\findResourceWebAPI\locDB\obj\Debug\locDB.pdb
+C:\webpro\MVC4\MvcAppFindResource\locDB\bin\Debug\locDB.dacpac
+C:\webpro\MVC4\MvcAppFindResource\locDB\obj\Debug\Model.xml
+C:\webpro\MVC4\MvcAppFindResource\locDB\obj\Debug\refactor.xml
+C:\webpro\MVC4\MvcAppFindResource\locDB\obj\Debug\postdeploy.sql
+C:\webpro\MVC4\MvcAppFindResource\locDB\obj\Debug\predeploy.sql
+C:\webpro\MVC4\MvcAppFindResource\locDB\obj\Debug\locDB.dll
+C:\webpro\MVC4\MvcAppFindResource\locDB\obj\Debug\locDB.pdb
