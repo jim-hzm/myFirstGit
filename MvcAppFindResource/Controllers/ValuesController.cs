@@ -49,6 +49,32 @@ namespace MvcAppFindResource.Controllers
             var i = 0;
         }
 
+        [HttpGet]
+        public int Insert([FromUri] position request)
+        {
+            var dbent = new positionDBEntities();
+            var pos = new position
+            {
+                Id = 0,
+                keyName = request.keyName,
+                Lat = request.Lat,
+                Lng = request.Lng,
+                dateStamp = request.dateStamp
+            };
+            try
+            {
+                var result = dbent.positions_add(pos.Id, pos.keyName, pos.Lat, pos.Lng, pos.dateStamp);
+                result = (result == 0) ? 1 : 0;
+            }
+            catch (Exception)
+            {
+                //error process
+                throw;
+            }
+
+
+            return 1;
+        }
         /*
         [GET("HotelRooms"), HttpGet]
         public virtual HotelRoomAvailability GetHotelRooms([FromUri] HotelRoomRequest request)

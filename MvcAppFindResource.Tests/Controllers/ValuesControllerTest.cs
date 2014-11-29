@@ -56,6 +56,24 @@ namespace MvcAppFindResource.Tests.Controllers
         }
         */
         [TestMethod]
+        public void Insert()
+        {
+            // Arrange
+            var controller = new ValuesController();
+
+            // Act
+            position pos = new position();
+            pos.keyName = "123456780";
+            pos.Lat = decimal.Parse("48.5121372");
+            pos.Lng = decimal.Parse("-80.165364");
+            pos.dateStamp = DateTime.Now;
+            var result = controller.Insert(pos);
+
+            // Assert
+            Assert.AreEqual(result, 1);
+        }
+
+        [TestMethod]
         public void Put()
         {
             // Arrange

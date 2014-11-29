@@ -23,5 +23,6 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="positions_add" FunctionName="Model.Store.positions_add" />
   </EntityContainerMapping>
 </Mapping>

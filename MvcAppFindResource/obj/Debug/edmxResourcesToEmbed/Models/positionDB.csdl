@@ -5,6 +5,13 @@
     <FunctionImport Name="positions_selectct_by_id" ReturnType="Collection(Model.positions_selectct_by_id_Result)">
       <Parameter Name="keyName" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="positions_add">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="keyName" Mode="In" Type="String" />
+      <Parameter Name="Lat" Mode="In" Type="Decimal" />
+      <Parameter Name="Lng" Mode="In" Type="Decimal" />
+      <Parameter Name="dateStamp" Mode="In" Type="DateTime" />
+    </FunctionImport>
   </EntityContainer>
   <EntityType Name="position">
     <Key>

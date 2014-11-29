@@ -38,5 +38,30 @@ namespace MvcAppFindResource.Models
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<positions_selectct_by_id_Result>("positions_selectct_by_id", keyNameParameter);
         }
+    
+        public virtual int positions_add(Nullable<int> id, string keyName, Nullable<decimal> lat, Nullable<decimal> lng, Nullable<System.DateTime> dateStamp)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var keyNameParameter = keyName != null ?
+                new ObjectParameter("keyName", keyName) :
+                new ObjectParameter("keyName", typeof(string));
+    
+            var latParameter = lat.HasValue ?
+                new ObjectParameter("Lat", lat) :
+                new ObjectParameter("Lat", typeof(decimal));
+    
+            var lngParameter = lng.HasValue ?
+                new ObjectParameter("Lng", lng) :
+                new ObjectParameter("Lng", typeof(decimal));
+    
+            var dateStampParameter = dateStamp.HasValue ?
+                new ObjectParameter("dateStamp", dateStamp) :
+                new ObjectParameter("dateStamp", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("positions_add", idParameter, keyNameParameter, latParameter, lngParameter, dateStampParameter);
+        }
     }
 }

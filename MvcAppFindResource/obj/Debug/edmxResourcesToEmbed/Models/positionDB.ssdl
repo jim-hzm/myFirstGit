@@ -13,6 +13,13 @@
     <Property Name="Lng" Type="numeric" Scale="6" />
     <Property Name="dateStamp" Type="datetime" />
   </EntityType>
+  <Function Name="positions_add" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="keyName" Type="varchar" Mode="In" />
+    <Parameter Name="Lat" Type="decimal" Mode="In" />
+    <Parameter Name="Lng" Type="decimal" Mode="In" />
+    <Parameter Name="dateStamp" Type="datetime" Mode="In" />
+  </Function>
   <Function Name="positions_selectct_by_id" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="keyName" Type="varchar" Mode="In" />
   </Function>

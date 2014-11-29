@@ -68,5 +68,6 @@
     <Build Include="dbo\Tables\UserProfile.sql" />
     <Build Include="dbo\Tables\positions.sql" />
     <Build Include="dbo\Stored Procedures\positions_selectct_by_id.sql" />
+    <Build Include="dbo\Stored Procedures\position_add.sql" />
   </ItemGroup>
 </Project>

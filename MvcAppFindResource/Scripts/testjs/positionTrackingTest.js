@@ -13,8 +13,30 @@ QUnit.test("position_tracking_getPositionByKey_dataAccess Test", function (asser
 
     var da = pt.dataAccess();
 
-    da.getPositionByKey(cb, "/api/values/123456789");
-    
+    da.getPositionByKey(cb, "/api/values/get/123456789");
+
+    assert.equal(result, 1);
+
+});
+
+QUnit.test("position_tracking_savePosition Test", function (assert) {
+    var pt = position_tracking();
+
+    var position = {
+        "id":
+            0,
+        "keyName":
+            "123456789",
+        "Lat":
+            48.5121372,
+        "Lng":
+            -80.165364,
+        "dateStamp":
+            "2014-11-17T18:30:24.22"
+    };
+
+    var result = pt.savePosition(position);
+    //"Lat":37.772323,"Lng":-122.214897
     assert.equal(result, 1);
 
 });
