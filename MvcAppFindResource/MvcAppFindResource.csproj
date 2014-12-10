@@ -293,6 +293,8 @@
     <Content Include="mapSamples\testmap_polygon.html" />
     <Content Include="mapSamples\testmap_polyline.html" />
     <Content Include="mapSamples\testmap_simpleMarker.html" />
+    <Content Include="myLoc\location.html" />
+    <Content Include="myLoc\regionAndCountry.html" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />

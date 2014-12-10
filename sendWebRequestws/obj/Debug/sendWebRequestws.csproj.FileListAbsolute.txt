@@ -1,0 +1,9 @@
+C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequestws\bin\Debug\sendWebRequestws.exe.config
+C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequestws\bin\Debug\sendWebRequestws.exe
+C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequestws\bin\Debug\sendWebRequestws.pdb
+C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequestws\obj\Debug\sendWebRequestws.exe
+C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequestws\obj\Debug\sendWebRequestws.pdb
+C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequestws\bin\Debug\sendWebRequestws.exe.manifest
+C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequestws\bin\Debug\sendWebRequestws.application
+C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequestws\obj\Debug\sendWebRequestws.exe.manifest
+C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequestws\obj\Debug\sendWebRequestws.application

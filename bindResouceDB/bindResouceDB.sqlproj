@@ -69,5 +69,8 @@
     <Build Include="dbo\Tables\positions.sql" />
     <Build Include="dbo\Stored Procedures\positions_selectct_by_id.sql" />
     <Build Include="dbo\Stored Procedures\position_add.sql" />
+    <Build Include="dbo\Stored Procedures\IpAddress_addIp.sql" />
+    <Build Include="dbo\Stored Procedures\IpAdress_getLatestIp.sql" />
+    <Build Include="dbo\Tables\IpAdress.sql" />
   </ItemGroup>
 </Project>

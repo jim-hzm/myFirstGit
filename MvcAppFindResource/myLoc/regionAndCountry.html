@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+    <body>
+<div ng-controller="geoCtrl">
+  <p ng-bind="ip"></p>
+  <p ng-bind="hostname"></p>
+  <p ng-bind="loc"></p>
+  <p ng-bind="org"></p>
+  <p ng-bind="city"></p>
+  <p ng-bind="region"></p>
+  <p ng-bind="country"></p>
+  <p ng-bind="phone"></p>
+</div>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.angularjs.org/1.2.12/angular.min.js"></script>
+<script src="http://code.angularjs.org/1.2.12/angular-route.min.js"></script>
+<script>
+    'use strict';
+    var geo = angular.module('geo', [])
+    .controller('geoCtrl', ['$scope', '$http', function ($scope, $http) {
+        $http.jsonp('http://ipinfo.io/?callback=JSON_CALLBACK')
+          .success(function (data) {
+              $scope.ip = data.ip;
+              $scope.hostname = data.hostname;
+              $scope.loc = data.loc; //Latitude and Longitude
+              $scope.org = data.org; //organization
+              $scope.city = data.city;
+              $scope.region = data.region; //state
+              $scope.country = data.country;
+              $scope.phone = data.phone; //city area code
+          });
+    }]);
+</script>
+        
+
+        If you go to http://j.maxmind.com/app/geoip.js you will see that it contains
+
+        function geoip_country_code() { return 'ID'; }
+        function geoip_country_name() { return 'Indonesia'; }
+        function geoip_city()         { return 'Jakarta'; }
+        function geoip_region()       { return '04'; }
+        function geoip_region_name()  { return 'Jakarta Raya'; }
+        function geoip_latitude()     { return '-6.1744'; }
+        function geoip_longitude()    { return '106.8294'; }
+        function geoip_postal_code()  { return ''; }
+        function geoip_area_code()    { return ''; }
+        function geoip_metro_code()   { return ''; }
+    </body>
+</html>

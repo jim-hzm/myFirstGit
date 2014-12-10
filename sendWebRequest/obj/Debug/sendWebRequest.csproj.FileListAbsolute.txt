@@ -1,0 +1,12 @@
+C:\webpro\MVC4\Mvc4FindResource2\sendWebRequest\bin\Debug\sendWebRequest.exe.config
+C:\webpro\MVC4\Mvc4FindResource2\sendWebRequest\bin\Debug\sendWebRequest.exe
+C:\webpro\MVC4\Mvc4FindResource2\sendWebRequest\bin\Debug\sendWebRequest.pdb
+C:\webpro\MVC4\Mvc4FindResource2\sendWebRequest\obj\Debug\sendWebRequest.exe
+C:\webpro\MVC4\Mvc4FindResource2\sendWebRequest\obj\Debug\sendWebRequest.pdb
+C:\webpro\MVC4\Mvc4FindResource2\sendWebRequest\obj\Debug\sendWebRequest.csprojResolveAssemblyReference.cache
+C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequest\bin\Debug\sendWebRequest.exe.config
+C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequest\obj\Debug\sendWebRequest.exe
+C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequest\obj\Debug\sendWebRequest.pdb
+C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequest\bin\Debug\sendWebRequest.exe
+C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequest\bin\Debug\sendWebRequest.pdb
+C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequest\obj\Debug\sendWebRequest.csprojResolveAssemblyReference.cache
