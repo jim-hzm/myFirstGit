@@ -2,5 +2,5 @@
 	@ip varchar(15)
 AS
 	insert IpAddress(ip, dateStamp)
-	SELECT @ip, GETDATE()
+	SELECT ip, GETDATE()
 RETURN 0

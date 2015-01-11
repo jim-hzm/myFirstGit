@@ -1,4 +1,6 @@
-﻿/// <reference path="qunit-1.15.0.js" />
+﻿
+/// <reference path="../jquery.cookie.js" />
+/// <reference path="qunit-1.15.0.js" />
 /// <reference path="../positionTracking.js" />
 
 QUnit.test("position_tracking_getPositionByKey_dataAccess Test", function (assert) {
@@ -25,6 +27,8 @@ QUnit.test("position_tracking_savePosition Test", function (assert) {
     var position = {
         "id":
             0,
+        "keyName":
+            "123456789",
         "Lat":
             48.5121372,
         "Lng":
@@ -48,4 +52,16 @@ QUnit.test("position_tracking_getPositionByKey Test", function (assert) {
     assert.equal(pos.Lat, 37.772323);
     assert.equal(pos.Lng, -122.214897);
 
+});
+
+QUnit.test("position_tracking_isTrackIDexists Test", function (assert) {
+    var pt = position_tracking();
+
+    //Not in cookie
+    var result = pt.isTrackIDexists();
+    assert.equal(result, false);
+    //after saved in cookie    
+    //function here to save trackid to cookie:
+
+    assert.equal(result, true);
 });

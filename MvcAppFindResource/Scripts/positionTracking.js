@@ -1,10 +1,19 @@
 ﻿/// <reference path="jquery-2.1.1.js" />
 /// <reference path="jquery-2.1.1.intellisense.js" />
+/// <reference path="jquery.cookie.js" />
+
 var position_tracking = function () {
+    var appPath = function () {
+        //"/findloc/myloc/location.html"
+        if (location.pathname.toLowerCase().indexOf("findloc") > 0)
+            return "/findloc";
+        return "";
+    };
+
     var dataAccess = function () {
         var getPositionByKey = function (callbacks, getPositionUrl) {
             $.ajax({
-                url: getPositionUrl,
+                url: appPath() + getPositionUrl,
                 dataType: 'json',
                 type: 'GET',
                 async: false,
@@ -22,7 +31,7 @@ var position_tracking = function () {
 
         var savePosition = function (callbacks, position) {
             $.ajax({
-                url: "/api/values/insert/",
+                url: appPath() +  "/api/values/insert/",
                 dataType: 'json',
                 type: 'GET',
                 async: false,
@@ -68,6 +77,30 @@ var position_tracking = function () {
         return result;
     };
 
+    var saveCurrBrowserPosition = function () {
+        //information tracked: device, browser version, ip, position
+        navigator.geolocation.getCurrentPosition(getLocation);
+        function getLocation(location) {
+            //alert(location.coords.latitude);
+            //alert(location.coords.longitude);
+            //alert(location.coords.accuracy);
+            var position = {
+                "id":
+                    0,
+                "keyName":
+                    $.cookie("trackId"),
+                "Lat":
+                    location.coords.latitude,
+                "Lng":
+                    location.coords.longitude,
+                "dateStamp":
+                    (new Date()).toLocaleString()
+            };
+
+            savePosition(position);
+        }
+    };
+
     var getPositionByKey = function (keyName) {
         var pos = { Lat: 0.0, Lng: 0.0 };
 
@@ -90,11 +123,44 @@ var position_tracking = function () {
         return pos;
     };
 
+    var isTrackIDexists = function () {
+        if ($.cookie("trackId") === undefined || $.cookie("trackId")==="")
+            return false;
+        return true;
+    };
 
-    return {
+    var saveTrackIdToCookie = function (trackId) {
+        $.cookie("trackId", trackId);
+    };
+
+
+   var initSimpleMark = function () {
+        var pt = position_tracking();
+        var pos = pt.getPositionByKey($.cookie("trackId")); //123456788, 123456789
+        var myLatlng = new google.maps.LatLng(pos.Lat, pos.Lng);    //new google.maps.LatLng(43.66,-79.59);
+        var mapOptions = {
+            zoom: 10,
+            center: myLatlng
+        }
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'Hello World!'
+        });
+    }
+   return {
+       initSimpleMark: initSimpleMark,
+       appPath: appPath,
+        isTrackIDexists: isTrackIDexists,
+        saveTrackIdToCookie: saveTrackIdToCookie,
+        saveCurrBrowserPosition: saveCurrBrowserPosition,
         dataAccess: dataAccess,
         getPositionByKey: getPositionByKey,
         savePosition: savePosition
     };
 
 }
+
+

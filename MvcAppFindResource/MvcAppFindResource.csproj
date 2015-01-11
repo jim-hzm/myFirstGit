@@ -185,6 +185,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MapServiceController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -288,11 +289,13 @@
       <DependentUpon>positionDB.edmx</DependentUpon>
       <LastGenOutput>positionDB.cs</LastGenOutput>
     </Content>
+    <None Include="Properties\PublishProfiles\findAppResource.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="mapSamples\testmap.html" />
     <Content Include="mapSamples\testmap_polygon.html" />
     <Content Include="mapSamples\testmap_polyline.html" />
     <Content Include="mapSamples\testmap_simpleMarker.html" />
+    <Content Include="myLoc\default.html" />
     <Content Include="myLoc\location.html" />
     <Content Include="myLoc\regionAndCountry.html" />
     <Content Include="Scripts\jquery-1.8.2.js" />
@@ -303,6 +306,7 @@
     <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />

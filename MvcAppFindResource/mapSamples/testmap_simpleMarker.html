@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
@@ -21,7 +21,7 @@
   var pos = pt.getPositionByKey("123456788"); //123456788, 123456789
   var myLatlng = new google.maps.LatLng(pos.Lat, pos.Lng);    //new google.maps.LatLng(43.66,-79.59);
   var mapOptions = {
-    zoom: 10,
+    zoom: 3,
     center: myLatlng
   }
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);

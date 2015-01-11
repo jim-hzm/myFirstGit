@@ -7,3 +7,6 @@ C:\webpro\MVC4\MvcAppFindResource\bindResouceDB\obj\Debug\postdeploy.sql
 C:\webpro\MVC4\MvcAppFindResource\bindResouceDB\obj\Debug\predeploy.sql
 C:\webpro\MVC4\MvcAppFindResource\bindResouceDB\obj\Debug\bindResouceDB.dll
 C:\webpro\MVC4\MvcAppFindResource\bindResouceDB\obj\Debug\bindResouceDB.pdb
+C:\Users\Platy\Documents\GitHub\myFirstGit\bindResouceDB\bin\Debug\bindResouceDB.dacpac
+C:\Users\Platy\Documents\GitHub\myFirstGit\bindResouceDB\obj\Debug\bindResouceDB.dll
+C:\Users\Platy\Documents\GitHub\myFirstGit\bindResouceDB\obj\Debug\bindResouceDB.pdb

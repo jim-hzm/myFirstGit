@@ -5,7 +5,7 @@
     <script src="../Scripts/jquery-2.1.1.js"></script>
     <script src="../Scripts/jquery.cookie.js"></script>
     <script src="../Scripts/positionTracking.js"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEGuVdOjobWVHhtKGjnpBTjbKQO8Dlilc"></script>
     <script>
         var ot = position_tracking();
         //ot.saveCurrBrowserPosition();
@@ -14,21 +14,32 @@
             if (ot.isTrackIDexists()) {
                 $('#divInputTrackId').css("display", "none");
                 ot.saveCurrBrowserPosition();
+                ot.initSimpleMark();
             } else {
                 $('#divInputTrackId').css("display", "");
                 if ($('#phone_or_email')[0].value != "") {
                     ot.saveTrackIdToCookie($('#phone_or_email')[0].value);
+                    $('#divInputTrackId').css("display", "none");
                     ot.saveCurrBrowserPosition();
                 }
 
             }
         }
     </script>
+    <style>
+        html, body, #map-canvas {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+
 </head>
 <body onload="showHideTrackIdInput();">
     <div id="divInputTrackId" style="display: none;">
         Please input your phone #/loginID:
         <input id="phone_or_email" type="text" /> <input id="okBtn" type="button" value="ok" onclick="showHideTrackIdInput()" />
     </div>
+    <div id="map-canvas"></div>
 </body>
 </html>

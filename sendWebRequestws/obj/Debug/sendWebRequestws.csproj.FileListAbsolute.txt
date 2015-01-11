@@ -10,3 +10,6 @@ C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequestws\obj\Debug\sendWebReq
 C:\Users\Platy\Documents\GitHub\myFirstGit\sendWebRequestws\bin\Debug\sendWebRequestws.exe.config
 C:\Users\Platy\Documents\GitHub\myFirstGit\sendWebRequestws\obj\Debug\sendWebRequestws.exe
 C:\Users\Platy\Documents\GitHub\myFirstGit\sendWebRequestws\obj\Debug\sendWebRequestws.pdb
+C:\Users\Platy\Documents\GitHub\myFirstGit\sendWebRequestws\obj\Debug\sendWebRequestws.csprojResolveAssemblyReference.cache
+C:\Users\Platy\Documents\GitHub\myFirstGit\sendWebRequestws\obj\Debug\sendWebRequestws.ProjectInstaller.resources
+C:\Users\Platy\Documents\GitHub\myFirstGit\sendWebRequestws\obj\Debug\sendWebRequestws.csproj.GenerateResource.Cache

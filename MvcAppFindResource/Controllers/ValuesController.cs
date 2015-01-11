@@ -23,6 +23,7 @@ namespace MvcAppFindResource.Controllers
         public positions_selectct_by_id_Result Get(string id)
         {
 
+
             var dbent = new positionDBEntities();
 
             var result = dbent.positions_selectct_by_id(id);

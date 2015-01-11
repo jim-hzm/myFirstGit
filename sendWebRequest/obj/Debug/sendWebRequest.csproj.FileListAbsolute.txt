@@ -13,3 +13,6 @@ C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequest\obj\Debug\sendWebReque
 C:\Users\Platy\Documents\GitHub\myFirstGit\sendWebRequest\bin\Debug\sendWebRequest.exe.config
 C:\Users\Platy\Documents\GitHub\myFirstGit\sendWebRequest\obj\Debug\sendWebRequest.exe
 C:\Users\Platy\Documents\GitHub\myFirstGit\sendWebRequest\obj\Debug\sendWebRequest.pdb
+C:\Users\Platy\Documents\GitHub\myFirstGit\sendWebRequest\bin\Debug\sendWebRequest.exe
+C:\Users\Platy\Documents\GitHub\myFirstGit\sendWebRequest\bin\Debug\sendWebRequest.pdb
+C:\Users\Platy\Documents\GitHub\myFirstGit\sendWebRequest\obj\Debug\sendWebRequest.csprojResolveAssemblyReference.cache
