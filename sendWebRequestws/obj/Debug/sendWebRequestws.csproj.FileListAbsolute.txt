@@ -7,3 +7,6 @@ C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequestws\bin\Debug\sendWebReq
 C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequestws\bin\Debug\sendWebRequestws.application
 C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequestws\obj\Debug\sendWebRequestws.exe.manifest
 C:\Users\jhong\Documents\GitHub\myFirstGit\sendWebRequestws\obj\Debug\sendWebRequestws.application
+C:\Users\Platy\Documents\GitHub\myFirstGit\sendWebRequestws\bin\Debug\sendWebRequestws.exe.config
+C:\Users\Platy\Documents\GitHub\myFirstGit\sendWebRequestws\obj\Debug\sendWebRequestws.exe
+C:\Users\Platy\Documents\GitHub\myFirstGit\sendWebRequestws\obj\Debug\sendWebRequestws.pdb

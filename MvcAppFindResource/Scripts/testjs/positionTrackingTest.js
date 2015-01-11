@@ -25,8 +25,6 @@ QUnit.test("position_tracking_savePosition Test", function (assert) {
     var position = {
         "id":
             0,
-        "keyName":
-            "123456789",
         "Lat":
             48.5121372,
         "Lng":

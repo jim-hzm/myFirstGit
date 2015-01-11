@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Express 2013 for Web
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAppFindResource", "MvcAppFindResource\MvcAppFindResource.csproj", "{CE904A9B-DF1E-4DF4-86C5-0873625D4B5B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAppFindResource.Tests", "MvcAppFindResource.Tests\MvcAppFindResource.Tests.csproj", "{29C95179-3FA7-47DF-AB0F-E19973B3A0E4}"
@@ -10,8 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sendWebRequest", "sendWebRequest\sendWebRequest.csproj", "{8C5D875F-5888-42FF-BD58-05F76A5E22EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sendWebRequestws", "sendWebRequestws\sendWebRequestws.csproj", "{9C60A751-20E7-4DFA-91CB-8CFA11A15C67}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AAAAWindowsService1", "AAAAWindowsService1\AAAAWindowsService1.csproj", "{9B7E1CEA-865C-4536-85B8-446C9474A59D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,6 @@ Global
 		{9C60A751-20E7-4DFA-91CB-8CFA11A15C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C60A751-20E7-4DFA-91CB-8CFA11A15C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C60A751-20E7-4DFA-91CB-8CFA11A15C67}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9B7E1CEA-865C-4536-85B8-446C9474A59D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B7E1CEA-865C-4536-85B8-446C9474A59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B7E1CEA-865C-4536-85B8-446C9474A59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B7E1CEA-865C-4536-85B8-446C9474A59D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
